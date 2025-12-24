@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./src/output.css" />
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Tailwind Project</title>
+</head>
+
+<body class="bg-white text-gray-800 dark:bg-gray-900  
+            dark:text-gray-100">
+
+  <section>
+    <!--! Start Of main Content -->
+    <header class="flex items-center justify-between lg:px-10 lg:py-6 ">
+      <div class="text-2xl font-bold text-gray-800 dark:text-white">
+        <p class="text-[20px] px-3 md:text-3xl"><span class="text-blue-600">A</span>PPEXY</p>
+      </div>
+
+      <!--! Start Of Nav  -->
+      <nav class="hidden md:flex gap-6 text-sm text-gray-600 dark:text-gray-300 ">
+        <a href="#"
+          class="text-blue-600 transiiton-3s border-b-2 border-blue-600 pb-1 dark:text-blue-400 dark:border-blue-400 ">Home</a>
+        <a href="#">Features</a>
+        <a href="#">Screenshot</a>
+        <a href="#">Testimonial</a>
+        <a href="#">Pricing</a>
+        <a href="#">Contact US</a>
+      </nav>
+
+      <div class="flex items-center gap-3 text-sm">
+        <!-- Dark Mode Toggle -->
+        <label class="inline-flex items-center cursor-pointer">
+          <input type="checkbox" id="darkToggle" class="sr-only peer">
+          <div class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer
+focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full 
+peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:
+translate-x-full peer-checked:after:border-white after:content-[''] after:absolute 
+after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border 
+after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 
+peer-checked:bg-blue-600 dark:peer-checked:bg-blue-600"></div>
+        </label>
+        <a href="#" class="text-gray-600 dark:text-gray-300 ml-10">Login</a>
+        <a href="#" class="px-2 py-3  bg-blue-600 text-white rounded-md 
+hover:bg-blue-700">Sign Up</a>
+      </div>
+      <!--! End Of Nav  -->
+    </header>
+    <!--! End Of main Content -->
+
+    <!--! Hero Section -->
+    <div class="flex flex-col-reverse md:flex-row item-center justify-between px-10 md:px-20 py-16">
+
+      <!--! Left Content -->
+      <div class="max-w-xl space-y-6">
+        <h1 class="text-4xl md:text-5xl font-bold text-grey-600 dark:text-white capitalize mt-20">
+          manage your activity
+        </h1>
+        <h1 class="text-blue-900 text-4xl md:text-5xl font-bold">Appexy</h1>
+        <p class="text-gray-600 dark:text-gray-300">Maecenas tempus, tellus eget condimentum rhoncus quam semper libero
+          sit amet adipiscing sem neque sed ipsum nam quam nunc blandit vel luctus
+          pulvinar. </p>
+        <div class="flex gap-6">
+          <a href="#"
+            class="px-2 py-1 text-[11px] md:text-[17px] md:px-6 md:py-3 bg-blue-600 text-white rounded-md hover:bg-blue-900 transition">Get
+            Started Today</a>
+          <a href="#" class="px-2 py-1 text-[11px] md:text-[17px] md:px-6 md:py-3 border border-gray-300 text-gray-700 rounded-md hover:bg-gray-100 dark:text-gray-200 dark:border-gray-500 
+dark:hover:bg-gray-800 transition capitalize">Download app</a>
+        </div>
+      </div>
+
+      <!--! Right Side -->
+      <div class="mt-10 md:mt-0 md:w-1/2">
+        <img src="./images/hero-2-img.e00536899165fc0261f3.png" alt="#" class="w-full max-w-sm mx-auto rounded-xl">
+      </div>
+    </div>
+  </section>
+
+  <!--! Start of future section -->
+
+  <section class="bg-white dark:bg-gray-900 py-20 px-10 mt-6">
+    <div class="titles text-center">
+      <h4 class="text-gray-900 dark:text-gray-300 mb-5">Our Features</h4>
+      <p class="text-gray-900 dark:text-gray-100 mb-3 text-xl md:text-[38px]">Smart Solutions For Busy People</p>
+
+      <div class="sub-content flex md:block mb-5">
+        <p class="text-gray-900 dark:text-gray-300 mb-1 text-[11px] md:text-[16px]">Sed ut perspiciatis unde omnis iste
+          natus error voluptatem
+          accusantium doloremque remaperiam.
+        </p>
+      </div>
+    </div>
+
+    <div class="headers flex flex-col md:flex-row gap-20 justify-center">
+
+      <div class="left-section flex items-center justify-center">
+        <img src="images/features-1.bc7b2e31dc2030c17a64.png" alt="Feature Images" class="w-64 md:w-[500px]">
+      </div>
+
+      <div class="right-section flex flex-col justify-center ">
+        <div class="content flex flex-col justify-center items-center h-100">
+          <h3 class="text-gray-900 dark:text-gray-100 mt-40 md:mt-40 text-[20px] md:text-3xl text-center">Discover your
+            destination</h3>
+          <p class="text-gray-900 dark:text-gray-100 mt-5 mb-10 text-[12px] md:text-[16px] text-center">Sed ut
+            perspiciatis unde omnis iste natus error voluptatem accusantium doloremque remaperiam.</p>
+
+          <div class="sub-content1 flex justify-center items-center h-20 text-[15px] mb-15 md:mb-5">
+            <span class="border w-3 h-3 rounded-full bg-white me-10 "></span>
+            <p class="text-gray-900 dark:text-gray-300 capitalize"> <span class="text-blue-300 font-semibold">The wise
+                therefore always holds</span>
+              holds in us matters to this principle a selection a rejects pleasures nventore flex contrtwh.
+            </p>
+          </div>
+
+          <div class="sub-content2 flex justify-center items-center h-20 text-[15px] mb-15 md:mb-5">
+            <span class="border w-3 h-3 rounded-full bg-white me-10 "></span>
+            <p class="text-gray-900 dark:text-gray-300 capitalize"> Sed perspiciatis omnis a <span
+                class="text-blue-300 font-semibold">natus error accusantium
+                doloremque</span>laudantium totam rem aperiam eaque ipsa quae illo inventore.
+            </p>
+          </div>
+          <div class="sub-content3 flex justify-center items-center h-20 text-[15px] mb-40 md:mb-40">
+            <span class="border w-3 h-3 rounded-full bg-white me-10"></span>
+            <p class="text-gray-900 dark:text-gray-300 capitalize">Et si quidem rerum facilis
+              <span class="text-blue-300 font-semibold">esexpedita</span>
+              distinctio am libero tempore llo inventore flex contrtwh <span class="text-blue-300 font-semibold">soluta
+                nobis
+                est</span>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--! End of future section -->
+
+  <!--! start of pricing section -->
+
+  <section class="py-16 px-4 max-w-7xl mx-auto text-center">
+
+    <!--? Titles  -->
+    <h3 class="text-gray-900 dark:text-gray-300 text-xl mb-5">Our Pricing</h3>
+    <h2 class="text-gray-900 dark:text-gray-100 text-4xl">Pricing Plan</h2>
+    <p class="text-gray-900 dark:text-gray-300 mt-6 capitalize"> Sed ut perspiciatis unde omnis iste natus error
+      voluptatem accusantium
+      doloremque rem aperiam.
+    </p>
+
+    <div class="border-items inline-flex border rounded-full dark:border-gray-700 mt-15">
+      <p class="uppercase text-white bg-blue-500 px-4 py-1 rounded-full w-30 ">Monthly</p>
+      <p class="uppercase text-gray-900 dark:text-gray-300 bg-transparent border-gray-300 px-2 py-1 rounded-full w-30">
+        yearly</p>
+    </div>
+
+    <!--? cards  -->
+    <div class="cards flex flex-col justify-center flex-wrap gap-20 md:flex md:flex-row md:justify-center md:gap-5 mt-20">
+
+      <!--? Card 1 -->
+      <div class="card border border-gray-500 rounded-xl w-100 py-5 bg-transparent ">
+        <h2 class="text-gray-900 dark:text-gray-100 text-2xl font-semibold uppercase">Free</h2>
+        <p class="uppercase text-gray-900 dark:text-gray-300 text-3xl mt-5">$0.00 <span
+            class="text-blue-700 text-base text-[20px] font-normal">/ month</span></p>
+
+        <ul
+          class="text-gray-900 dark:text-gray-300 uppercase font-normal text-[16px] text-left ps-5 pt-6 mt-6 space-y-3">
+          <li class="flex items-center gap-3">
+            <span class="border border-white w-3 h-3 rounded-full bg-white"></span>
+            3 Projects
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="border border-white w-3 h-3 rounded-full bg-white"></span>
+            50GB Storage
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="border border-white w-3 h-3 rounded-full bg-white"></span>
+            Unlimited Contacts
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="border border-white w-3 h-3 rounded-full bg-white"></span>
+            5 Domains
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="border border-white w-3 h-3 rounded-full bg-white"></span>
+            Free Support <span class="text-red-500 font-bold">24/7</span>
+          </li>
+        </ul>
+        <button
+          class="mt-6 w-90 bg-blue-600 hover:bg-white hover:text-blue-600 text-white font-bold py-2 rounded-lg transition-all cursor-pointer">Choose
+          Plan</button>
+      </div>
+
+      <!--? Card 2 -->
+      <div class=" relative card border border-gray-500 rounded-xl w-100 py-5 bg-transparent ">
+        <p class=" absolute -top-7 left-60 text-white bg-red-500 uppercase p-2 w-40 rounded-xl">Most popular</p>
+        <h2 class="text-gray-900 dark:text-gray-100 text-2xl font-semibold uppercase">Standard</h2>
+        <p class="uppercase text-gray-900 dark:text-gray-300 text-3xl mt-5">$29.00 <span
+            class="text-blue-700 text-base text-[20px] font-normal">/ month</span></p>
+
+        <ul
+          class="text-gray-900 dark:text-gray-300 uppercase font-normal text-[16px] text-left ps-5 pt-6 mt-6 space-y-3">
+          <li class="flex items-center gap-3">
+            <span class="border border-white w-3 h-3 rounded-full bg-white"></span>
+            10 Projects
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="border border-white w-3 h-3 rounded-full bg-white"></span>
+            1T Storage
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="border border-white w-3 h-3 rounded-full bg-white"></span>
+            Unlimited Contacts
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="border border-white w-3 h-3 rounded-full bg-white"></span>
+            12 Domains
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="border border-white w-3 h-3 rounded-full bg-white"></span>
+            Free Support <span class="text-red-500 font-bold">24/7</span>
+          </li>
+        </ul>
+        <button
+          class="mt-6 w-90 bg-blue-600 hover:bg-white hover:text-blue-600 text-white font-bold py-2 rounded-lg transition-all cursor-pointer">Choose
+          Plan</button>
+      </div>
+
+      <!--? Card 3 -->
+      <div class="card border border-gray-500 rounded-xl w-100 py-5 bg-transparent ">
+        <h2 class="text-gray-900 dark:text-gray-100 text-2xl font-semibold uppercase">Enterprice</h2>
+        <p class="uppercase text-gray-900 dark:text-gray-300 text-3xl mt-5">$49.00 <span
+            class="text-blue-700 text-base text-[20px] font-normal">/ month</span></p>
+
+        <ul
+          class="text-gray-900 dark:text-gray-300 uppercase font-normal text-[16px] text-left ps-5 pt-6 mt-6 space-y-3">
+          <li class="flex items-center gap-3">
+            <span class="border border-white w-3 h-3 rounded-full bg-white"></span>
+            20 Projects
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="border border-white w-3 h-3 rounded-full bg-white"></span>
+            2.5T Storage
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="border border-white w-3 h-3 rounded-full bg-white"></span>
+            Unlimited Contacts
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="border border-white w-3 h-3 rounded-full bg-white"></span>
+            18 Domains
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="border border-white w-3 h-3 rounded-full bg-white"></span>
+            Free Support <span class="text-red-500 font-bold">24/7</span>
+          </li>
+        </ul>
+        <button
+          class="mt-6 w-90 bg-blue-600 hover:bg-white hover:text-blue-600 text-white font-bold py-2 rounded-lg transition-all cursor-pointer">Choose
+          Plan</button>
+      </div>
+    </div>
+  </section>
+  <!--! End of pricing section -->
+
+  <!--! End of Code  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js"
+    integrity="sha512-6BTOlkauINO65nLhXhthZMtepgJSghyimIalb+crKRPhvhmsCdnIuGcVbR5/aQY2A+260iC1OPy1oCdB6pSSwQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+</body>
+
+</html>
